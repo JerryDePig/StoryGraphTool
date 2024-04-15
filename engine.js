@@ -34,6 +34,7 @@ class Engine {
         button.onclick = () => {
             while(this.actionsContainer.firstChild) {
                 this.actionsContainer.removeChild(this.actionsContainer.firstChild)
+
             }
             this.scene.handleChoice(data);
         }

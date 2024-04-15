@@ -1,58 +1,107 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Going Back Home",
+    "Credits": "Created by Jason Li (jli714@ucsc.edu) , original by  Adam Smith (amsmith@ucsc.edu).",
+    "InitialLocation": "Campus",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Campus": {
+            "Body": "The lecture I was attending just ended.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "Go to Bus",
+                    "Target": "Bus Stop"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "Bus Stop": {
+            "Body": "I go to the bus stop, I am now waiting for the 18 bus to go home. The bus comes and I get on it. I feel a little tired.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Sleep",
+                    "Target": "Metro_Station"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Don't Sleep",
+                    "Target": "Don't Sleep"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Metro_Station": {
+            "Body": "I go to sleep and I ended up oversleeping. Now I'm at the metro station. I felt something in my pocket. It was the key to my house.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Walk Home",
+                    "Target": "Walk Home"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Walk Home": {
+            "Body": "I decide to walk home. I then notice a cat. Also, I see a basketball game going on. Do I:",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Look at the basketball game",
+                    "Target": "Basketball"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Pet the cat",
+                    "Target": "Cat"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Basketball": {
+            "Body": "I end up looking at the basketball game for a few minutes. Then I continue to keep walking home",
+            "Choices": [
+                {
+                    "Text": "Continue",
+                    "Target": "Home2"
+                }
+            ]
+        },
+        "Cat": {
+            "Body": "I end up petting the cat. The cat doesn't mind it. The cat looks happy. Then I continue to keep walking home.",
+            "Choices": [
+                {
+                    "Text": "Continue",
+                    "Target": "Home2"
+                }
+            ]
+        },
+        "Don't Sleep": {
+            "Body": "I decide to not sleep. After a while, I get off the bus on my stop. Now, I go and walk home",
+            "Choices": [
+                {
+                    "Text": "Go Home",
+                    "Target": "Home1"
+                }
+            ]
+        },
+        "Home1": {
+            "Body": "I'm now at home. As I approach my door, it's locked",
+            "Choices": [
+                {
+                    "Text": "Try to open the locked door.",
+                    "Target": "End1"
+                }
+            ]
+        },
+        "Home2": {
+            "Body": "I'm now at home. As I approach my door, it's locked",
+            "Choices": [
+                {
+                    "Text": "Try to open the locked door.",
+                    "Target": "End1"
+                },
+                {
+                    "Text": "Open the locked door with the key ",
+                    "Target": "End2"
+                }
+            ]
+        },
+        "End1": {
+            "Body": "I try budging the locked door with no results, now I'm stuck."
+        },
+        "End2": {
+            "Body": "I open the door with my key that was in my pocket. I'm now home."
         }
+
     }
 }
